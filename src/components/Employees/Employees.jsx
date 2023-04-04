@@ -6,15 +6,15 @@ const Employees = (props) => {
 const { teamArr } = props;
 
 const employeeCards = teamArr.map((team, id) => (
-    <>
-    <div>
-        <p className='employee__cards--name' key={id + 1}>
+    
+    <div key={id + 1}>
+        <p className='employee__cards--name' >
         {team.name} <br/> {team.role}</p> 
         <div className='counter__cards'>
-            <Counter counterID={id + 1} />
+            <Counter />
         </div>      
     </div> 
-    </>       
+          
 ));
 
 console.log(employeeCards);

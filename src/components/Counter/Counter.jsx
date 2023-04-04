@@ -5,8 +5,8 @@ import "./Counter.scss";
 
 
 
-const Counter = (props) => {
-    const { counterId } = props;
+const Counter = () => {
+    
     const [ counter, setCounter ] = useState(0);
 
     const handleIncrement = () => {
@@ -23,9 +23,9 @@ const Counter = (props) => {
   return (
     <>
         <p>{counter}</p>
-        <div className='button__cards' key={counterId}>
-            <button onClick={handleIncrement} className='button__cards--plusButton' key={counterId} >+</button>
-            <button onClick={handleDecrement} className='button__cards--minusButton' key={counterId}>-</button>
+        <div className='button__cards' >
+            <button onClick={handleIncrement} className='button__cards--plusButton'  >+</button>
+            <button onClick={handleDecrement} className='button__cards--minusButton' >-</button>
         </div>    
     </>
     
