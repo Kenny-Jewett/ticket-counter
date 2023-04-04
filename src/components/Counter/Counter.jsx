@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import "./Counter.scss";
 
 
 
@@ -10,11 +11,11 @@ const Counter = (props) => {
 
     const handleIncrement = () => {
         setCounter(counter + 1);
-    }
+    };
 
     const handleDecrement = () => {
         setCounter(counter - 1);
-    }
+    };
 
 
 
