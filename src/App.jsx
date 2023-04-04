@@ -11,7 +11,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <div className='main__body'>
       <Employees teamArr={team} />
     </div>
   )
