@@ -1,4 +1,6 @@
 
+@use "./sass/_variables.scss" as *;
+
 
 *,
 *::before,
@@ -23,6 +25,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: $color-darkest ;
   }
 
 input,
@@ -34,5 +37,5 @@ select {
 
 
 .main__body {
-    
+    background-color: $color-darkest;
 }

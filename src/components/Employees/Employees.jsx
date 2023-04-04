@@ -7,7 +7,7 @@ const { teamArr } = props;
 
 const employeeCards = teamArr.map((team, id) => (
     
-    <div key={id + 1}>
+    <div className='employee__cards' key={id + 1}>
         <p className='employee__cards--name' >
         {team.name} <br/> {team.role}</p> 
         <div className='counter__cards'>
@@ -21,7 +21,7 @@ console.log(employeeCards);
 
 
   return (
-    <div className='employee__cards'>
+    <div className='employee__container'>
         {employeeCards}
     </div>
   )
